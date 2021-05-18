@@ -16,6 +16,7 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
     "@types/node": "^15.3.0",
     "@types/react": "^17.0.5",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
