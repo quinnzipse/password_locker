@@ -20,7 +20,18 @@
     "react",
     "@typescript-eslint"
   ],
+  "globals": {
+    "React": "writable"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "rules": {
+    "react/react-in-jsx-scope": "off",
     "import/no-unresolved": [2],
     "indent": "warn",
     "quotes": "warn",
