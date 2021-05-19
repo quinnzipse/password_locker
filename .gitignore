@@ -35,6 +35,6 @@ yarn-error.log*
 .vercel
 
 #public ignores
-/public/*.js
+/public/*.js*
 
 package-lock.json
