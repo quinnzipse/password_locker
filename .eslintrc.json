@@ -61,6 +61,7 @@
     "no-extra-parens": "warn",
     "no-floating-decimal": "warn",
     "no-mixed-spaces-and-tabs": "warn",
+    "no-extra-semi":"error",
     "no-multi-spaces": "warn",
     "no-tabs": "warn",
     "no-trailing-spaces": "warn",
