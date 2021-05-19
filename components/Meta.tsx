@@ -6,7 +6,7 @@ interface MetaProps {
   description?: string
 }
 
-function Meta ({ title, keywords, description }: MetaProps) {
+const Meta = ({ title, keywords, description }: MetaProps) => {
   return (
     <Head>
       <title>{title}</title>
