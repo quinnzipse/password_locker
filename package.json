@@ -28,6 +28,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.23.2",
+    "nightwind": "^1.1.11",
     "postcss": "^8.2.15",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",

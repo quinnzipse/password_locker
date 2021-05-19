@@ -1,15 +1,12 @@
 import Link from 'next/link'
-import { useState } from 'react'
 
 const Navbar = () => {
-  const [active, setActive] = useState(false)
-
-  const handleClick = () => {
-    setActive(!active)
-  }
-
   return (
-    <nav className='text-white bg-blue-500 p-3 text-center font-semibold text-xl'>Password Locker</nav>
+    <nav className='text-white bg-indigo-500 p-3 text-center font-semibold text-xl'>
+      <Link href='/'>
+        <a className='lg:inline-flex py-2 px-3'>Password Locker</a>
+      </Link>
+    </nav>
   )
 }
 
