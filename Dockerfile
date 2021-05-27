@@ -14,6 +14,7 @@ RUN yarn build && yarn install --production --ignore-scripts --prefer-offline
 
 # Production image, copy all the files and run next
 FROM node:alpine AS runner
+RUN yarn global add global pm2
 WORKDIR /app
 
 ENV NODE_ENV production
@@ -34,4 +35,5 @@ EXPOSE 3000
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
-CMD ["yarn", "start"]
+# CMD ["yarn", "start"]
+CMD [ "pm2-runtime", "npm", "--", "start" ]
