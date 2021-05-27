@@ -2,7 +2,6 @@ import Head from 'next/head'
 
 // @ts-ignore
 import nightwind from 'nightwind/helper'
-
 interface MetaProps {
   title?: string,
   keywords?: string,
