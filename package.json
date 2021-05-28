@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start"
+    "serve": "http-server out -p 5000",
+    "start": "concurrently --names 'SERVER,STATIC' --prefix-colors 'yellow,blue' --restart-tries -1 \"next start\" \"yarn serve\""
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.0",
     "crypto-js": "^4.0.0",
     "next": "10.2.0",
     "next-pwa": "^5.2.21",
